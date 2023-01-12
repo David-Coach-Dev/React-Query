@@ -1,9 +1,8 @@
-import { sleep } from "../../../helpers/sleep";
-import { Labels } from "../../../issues/interfaces/label/label";
-import { githubApi } from "../../base/githubApi";
+import { sleep } from "../../../helpers";
+import { Labels } from "../../../issues";
+import { githubApi } from "../../base";
 
-
-export const getLabels = async ():Promise<Labels[]> => {
+export const getLabels = async (): Promise<Labels[]> => {
   await sleep(2);
   //Usando Fetch
   //const res = await fetch("https://api.github.com/repos/facebook/react/labels");
