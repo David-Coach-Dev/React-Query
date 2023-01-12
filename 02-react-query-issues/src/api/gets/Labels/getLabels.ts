@@ -1,6 +1,6 @@
-import { sleep } from "../../../helpers";
-import { Labels } from "../../../issues";
-import { githubApi } from "../../base";
+import { githubApi } from "@/api";
+import { sleep } from "@/helpers";
+import { Labels } from "@/issues";
 
 export const getLabels = async (): Promise<Labels[]> => {
   await sleep(2);

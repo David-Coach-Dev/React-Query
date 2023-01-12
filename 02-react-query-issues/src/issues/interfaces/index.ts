@@ -1,1 +1,1 @@
-export * from './label/label';
+export * from './label';
