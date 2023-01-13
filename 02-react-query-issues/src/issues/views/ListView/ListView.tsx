@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { IssueList } from "../../components/IssueList/IssueList";
-import { LabelPicker } from "../../components/LabelPicker/LabelPicker";
+import { IssueList, LabelPicker, useIssues } from "@/issues";
 
 export const ListView = () => {
   const [selectedLabels, setSelectedLabels] = useState<string[]>([]);
-
+  const { issuesQuery } = useIssues();
   const onLabelChanged = (labelName: string) => {
     selectedLabels.includes(labelName)
       ? setSelectedLabels(selectedLabels.filter((label) => label !== labelName))
