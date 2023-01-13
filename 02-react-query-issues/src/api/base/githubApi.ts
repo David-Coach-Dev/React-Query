@@ -1,6 +1,9 @@
+import { GITHUB_BASE_URL, GITHUB_TOKEN } from '@/config';
 import axios from 'axios';
 
 export const githubApi = axios.create({
-  baseURL: 'https://api.github.com/repos/facebook/react',
-  headers: {},
+  baseURL: `${GITHUB_BASE_URL}`,
+  headers: {
+    Authorization: `Bearer ${GITHUB_TOKEN}`,
+  },
 });
