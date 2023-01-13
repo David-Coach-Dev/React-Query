@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IssueList, LabelPicker, useIssues } from "@/issues";
+import { LoadingIcon } from "@/shared";
 
 export const ListView = () => {
   const [selectedLabels, setSelectedLabels] = useState<string[]>([]);
@@ -13,7 +14,11 @@ export const ListView = () => {
   return (
     <div className="row mt-5">
       <div className="col-8">
-        <IssueList />
+        {issuesQuery.isLoading ? (
+          <LoadingIcon />
+        ) : (
+          <IssueList issuses={issuesQuery.data || []} />
+        )}
       </div>
 
       <div className="col-4">
