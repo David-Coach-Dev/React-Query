@@ -1,1 +1,1 @@
-export * from './gitApp';
+export * from './GitApp';
