@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { IssueItem, Issues } from "@/issues";
+import { IssueItem, Issue } from "@/issues";
 
 interface Props {
-  issues: Issues[];
+  issues: Issue[];
 }
 
 export const IssueList: FC<Props> = ({ issues }) => {

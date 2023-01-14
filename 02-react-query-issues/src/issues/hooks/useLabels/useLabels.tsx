@@ -12,7 +12,7 @@ export const useLabels = () => {
         color: "b60205",
         default: false,
       },
-    ],*/
+    ],
     placeholderData: [
       {
         id: 725156255,
@@ -38,7 +38,7 @@ export const useLabels = () => {
         color: "94ce52",
         default: false,
       },
-    ],
+    ],*/
     staleTime: 1000 * 60 * 60,
     refetchOnWindowFocus: false,
   });

@@ -1,6 +1,7 @@
+import { createBrowserRouter, Navigate } from "react-router-dom";
+
 import { IssueView, ListView } from "@/issues";
 import { GitApp } from "@/pages";
-import { createBrowserRouter, Navigate } from "react-router-dom";
 
 export const router = createBrowserRouter([
   {
